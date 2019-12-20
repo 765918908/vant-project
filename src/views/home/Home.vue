@@ -1,31 +1,83 @@
 <template>
 	<div>
-		<h1>Home</h1>
-		<van-button @click="mainClick" type="default">默认按钮</van-button>
-		<van-button type="primary">主要按钮</van-button>
-		<van-button type="info">信息按钮</van-button>
-		<van-button type="warning">警告按钮</van-button>
-		<van-button type="danger">危险按钮</van-button>
+		
+		<info/>
+		<nine-grid/>
 	</div>
 
 </template>
+<style>
+	@import url("../../assets/css/base.css");
 
+	.w100 {
+		width: 100%;
+	}
+
+	.info {
+		height: 14.375rem;
+		width: 100%;
+		font-size: 1.125rem;
+		display: flex;
+		flex-direction: column;
+		color: #FFFFFF;
+		background-color: #4b5cc4;
+	}
+
+	.msg {
+		height: 4.375rem;
+		justify-content: flex-end;
+		display: flex;
+		align-items: center;
+	}
+
+	.message {
+		height: 3.125rem;
+		width: 3.125rem;
+		margin-right: 0.625rem;
+	}
+
+	.total_money {
+		height: 5.625rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.yu_money {
+		height: 5.3125rem;
+		display: flex;
+		align-items: center;
+	}
+
+	.money-item {
+		flex: 1;
+		text-align: center;
+	}
+
+	.total-text {
+		align-items: flex-end !important;
+	}
+
+	.total_money div {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-left: 20px;
+		font-size: 1.25rem;
+	}
+</style>
 <script>
-// 	import Vue from 'vue';
-// import {Notify  } from 'vant';
 	
-// 	Vue.use(Button);
-// 	Vue.use(Notify);
+	import NineGrid from '@/components/common/grid/NineGrid.vue'
+	import Info from '@/components/service/info/Info.vue'
 	export default {
 		name: '',
 		methods: {
-			mainClick(){
-				Notify({ type: 'primary', message: '通知内容' });
-				
-			}
+			
+		},
+		components: {
+			NineGrid,
+			Info
 		}
 	}
 </script>
-
-<style>
-</style>

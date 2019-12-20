@@ -40,6 +40,6 @@
 	}
 
 	.active {
-		color: #db639b;
+		color: #4b5cc4;
 	}
 </style>
