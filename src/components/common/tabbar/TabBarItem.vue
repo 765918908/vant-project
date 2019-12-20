@@ -1,11 +1,12 @@
 <template>
-	<div class="tabbar-item" @click="itemClick">
-		<slot v-if="!isActive" name="item-icon"></slot>
-		<slot v-else name="item-icon-active"></slot>
-		<div :class="{active:isActive}">
-			<slot name="item-text"></slot>
+		<div class="tabbar-item" @click="itemClick">
+			<slot v-if="!isActive" name="item-icon"></slot>
+			<slot v-else name="item-icon-active"></slot>
+			<div :class="{active:isActive}">
+				<slot name="item-text"></slot>
+			</div>
 		</div>
-	</div>
+	
 </template>
 
 <script>

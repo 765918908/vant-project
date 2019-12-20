@@ -2,7 +2,7 @@
 	<div>
 		<div class="info">
 			<div class="msg w100">
-				<img class="message" src="../../assets/icon/message.png" />
+				<img class="message" src="../../../assets/icon/message.png" />
 			</div>
 			<div class="total_money w100">
 				<div class="total-text">总资产</div>
@@ -29,7 +29,7 @@
 <script>
 
   export default {
-    name:''
+    name:'Info'
   }
 </script>
 

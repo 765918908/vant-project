@@ -1,14 +1,47 @@
 <template>
 	<div>
-		
+		<!-- 信息展示 -->
 		<info/>
-		<nine-grid/>
+		<!-- 九宫格功能 -->
+		<nine-grid>
+			<grid-row>
+				<grid-item>
+					<img slot="grid-icon" src="../../assets/icon/huoqibao2.png" />
+					<div slot="grid-text">活期宝</div>
+				</grid-item>
+				<grid-item>
+					<img slot="grid-icon" src="../../assets/icon/huoqibao2.png" />
+					<div slot="grid-text">活期宝</div>
+				</grid-item>
+				<grid-item>
+					<img slot="grid-icon" src="../../assets/icon/huoqibao2.png" />
+					<div slot="grid-text">活期宝</div>
+				</grid-item>
+			</grid-row>
+		</nine-grid>
 	</div>
 
 </template>
+<script>
+	
+	import {NineGrid,GridRow,GridItem} from '@/components/common/grid'
+	import Info from '@/components/service/info/Info.vue'
+	export default {
+		name: '',
+		methods: {
+			
+		},
+		components: {
+			NineGrid,
+			Info,
+			GridRow,
+			GridItem
+		}
+	}
+</script>
 <style>
 	@import url("../../assets/css/base.css");
-
+	
 	.w100 {
 		width: 100%;
 	}
@@ -66,18 +99,4 @@
 		font-size: 1.25rem;
 	}
 </style>
-<script>
-	
-	import NineGrid from '@/components/common/grid/NineGrid.vue'
-	import Info from '@/components/service/info/Info.vue'
-	export default {
-		name: '',
-		methods: {
-			
-		},
-		components: {
-			NineGrid,
-			Info
-		}
-	}
-</script>
+
