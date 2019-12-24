@@ -1,5 +1,5 @@
 <template>
-	<div class="grid-item">
+	<div class="grid-item" @click="toPath">
 		<slot name="grid-icon"></slot>
 		<slot name="grid-text"></slot>
 	</div>
@@ -7,7 +7,14 @@
 
 <script>
   export default {
-    name:''
+    name:'',
+	props:['path'],
+	methods:{
+		toPath(){
+			this.$router.push(this.path)
+		}
+	}
+	
   }
 </script>
 

@@ -33,5 +33,62 @@
   }
 </script>
 
-<style>
+<style scoped="scoped">
+	
+	.w100 {
+		width: 100%;
+	}
+	
+	.info {
+		height: 14.375rem;
+		width: 100%;
+		font-size: 1.125rem;
+		display: flex;
+		flex-direction: column;
+		color: #FFFFFF;
+		background-color: #4b5cc4;
+	}
+	
+	.msg {
+		height: 4.375rem;
+		justify-content: flex-end;
+		display: flex;
+		align-items: center;
+	}
+	
+	.message {
+		height: 1.875rem;
+		width: 1.875rem;
+		margin-right: 0.625rem;
+	}
+	
+	.total_money {
+		height: 5.625rem;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.yu_money {
+		height: 5.3125rem;
+		display: flex;
+		align-items: center;
+	}
+	
+	.money-item {
+		flex: 1;
+		text-align: center;
+	}
+	
+	.total-text {
+		align-items: flex-end !important;
+	}
+	
+	.total_money div {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-left: 0.625rem;
+		font-size: 1.25rem;
+	}
 </style>
