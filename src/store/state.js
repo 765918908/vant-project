@@ -1,7 +1,4 @@
 export default {
-	homeData:{
-		'money':1000
-	},
-	token:''
-	
+	homeData:null,
+	userinfo:null
 }

@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- 信息展示 -->
-		<info/>
+		<info />
 		<!-- 九宫格功能 -->
 		<nine-grid>
 			<grid-row>
@@ -47,17 +47,27 @@
 				</grid-item>
 			</grid-row>
 		</nine-grid>
+
+
 	</div>
 
 </template>
 <script>
-	
-	import {NineGrid,GridRow,GridItem} from '@/components/common/grid'
+	import {
+		NineGrid,
+		GridRow,
+		GridItem
+	} from '@/components/common/grid'
 	import Info from '@/components/service/info/Info.vue'
 	export default {
 		name: '',
 		methods: {
-			
+
+		},
+		data(){
+			return {
+				show:true
+			}
 		},
 		components: {
 			NineGrid,
@@ -67,12 +77,12 @@
 		},
 		created() {
 			var that = this
-			that.$store.commit('getHomeData')
+			// that.$store.commit('getHomeData')
 		}
 	}
 </script>
 <style>
 	@import url("../../assets/css/base.css");
 
-</style>
 
+</style>
